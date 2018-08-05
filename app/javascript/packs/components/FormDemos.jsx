@@ -9,7 +9,7 @@ import IdealBankForm from './../forms/IdealBankForm.jsx';
 
 import {Elements} from 'react-stripe-elements';
 
-class CheckoutDemos extends React.Component {
+class FormDemos extends React.Component {
   constructor() {
     super();
 
@@ -55,4 +55,4 @@ class CheckoutDemos extends React.Component {
   }
 }
 
-export default CheckoutDemos;
+export default FormDemos;
