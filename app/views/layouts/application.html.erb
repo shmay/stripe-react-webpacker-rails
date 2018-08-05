@@ -13,7 +13,7 @@
     <%= yield %>
 
     <script>
-      window.stripe_key = '<%= Rails.application.credentials[:stripe_public_key] %>'
+      window.stripe_key = "<%= Rails.env.production? ? 'pk_test_what' : Rails.application.credentials[:stripe_public_key] %>";
     </script>
 
     <script id="stripe-js" src="https://js.stripe.com/v3/"></script>
