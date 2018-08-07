@@ -38,8 +38,8 @@ class PaymentRequestForm extends React.Component {
   render() {
     return this.state.canMakePayment ? (
 
-      <div>
-        <h5>Card Form 2:</h5>
+      <div style={{marginBottom: 70}}>
+        <h5>PaymentRequestForm:</h5>
         <PaymentRequestButtonElement
           paymentRequest={this.state.paymentRequest}
           className="PaymentRequestButton"
